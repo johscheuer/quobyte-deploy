@@ -11,6 +11,7 @@ In any case, you first need to create the quobyte namespace and install the oper
 ```
 kubectl apply -f deploy/quobyte-ns.yaml
 kubectl -n quobyte apply -f deploy/operator.yaml
+cp deploy operator-config.yaml.tmp operator-config.yaml
 kubectl -n quobyte apply -f deploy/operator-config.yaml
 ```
 
@@ -27,6 +28,7 @@ and recommended to delete the ephemeral bootstrap registry node. The bootstrap n
 must be part of the registry nodes specified in `deploy/services-config.yaml`
 ```
 kubectl -n quobyte apply -f deploy/services.yaml
+cp services-config.yaml.tmp services-config.yaml
 kubectl -n quobyte apply -f deploy/services-config.yaml
 ```
 
