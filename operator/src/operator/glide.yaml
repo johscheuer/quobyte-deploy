@@ -1,4 +1,4 @@
-package: qube
+package: operator
 import:
 - package: github.com/ghodss/yaml
   version: ^1.0.0
