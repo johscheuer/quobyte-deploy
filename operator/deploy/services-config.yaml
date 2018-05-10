@@ -7,23 +7,21 @@ spec:
     image: quay.io/quobyte/quobyte-server:2
     rolling_updates_enabled: true
     nodes:
-      - qb1
-      - qb2
-      - qb3
-      - qb4
-
+      - fluffy-kube-node-2
+      - fluffy-kube-node-1
+      - fluffy-kube-node-0
   metadata:
     image: quay.io/quobyte/quobyte-server:2
     rolling_updates_enabled: true
     nodes:
-      - qb1
-      - qb2
-      - qb3
+      - fluffy-kube-node-2
+      - fluffy-kube-node-0
+      - fluffy-kube-node-1
   data:
     image: quay.io/quobyte/quobyte-server:2
     rolling_updates_enabled: true
     nodes:
-      - qb1
-      - qb2
-      - qb3
-      - qb4
+      - fluffy-kube-node-0
+      - fluffy-kube-node-1
+      - fluffy-kube-node-2
+      - fluffy-kube-node-3
